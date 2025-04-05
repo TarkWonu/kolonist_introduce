@@ -1,0 +1,64 @@
+.contact-section{
+    height:80vh;
+    text-align:center;
+    transform: translateY(200px);
+    align-items:center;
+}
+.contact-form{
+    max-width: 500px;
+    margin: 0 auto 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-form input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.contact-form textarea{
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.btn {
+    display: inline-block;
+    margin-left:5px;
+    padding: 10px 20px;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.dark .container{
+    background-color:#000;
+    color:#ffe;
+}
+
+.guestbook {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+     /* 카드들이 왼쪽 정렬로 세로 정렬됨 */
+    align-items: center; 
+    text-align:left;    
+   
+  }
+  
+  .guestbook-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color:black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    word-break: break-word;
+    
+    /* 💡 아래 추가로 안정적인 텍스트 배치 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+

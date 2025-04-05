@@ -1,0 +1,139 @@
+/* 타임라인 섹션 기본 스타일 */
+.timeline-section {
+  padding: 60px 20px;
+  height: 100vh;
+  
+  
+}
+.timeline-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+.ttimeline-container h3{
+  text-align: center;
+}
+
+/* 타임라인 컨테이너 */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 30px;
+  
+}
+
+
+
+
+/* 세로선 */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 4px;
+  height: 100%;
+
+  border-radius: 2px;
+}
+
+/* 타임라인 아이템 */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+
+
+
+/* 날짜 스타일 */
+.timeline-date {
+  font-weight: bold;
+
+  margin-bottom: 8px;
+}
+
+/* 내용 스타일 */
+.timeline-content {
+  padding: 20px;
+  border-radius: 4px;
+ 
+  border-left: 4px solid #333;
+  
+}
+.timeline-content h3 {
+  margin-bottom: 10px;
+  //color: #333;
+  
+  font-size: 1.2rem;
+}
+.continue{
+  text-align:center;
+}
+.timeline-content p {
+  //color: #666;
+  line-height: 1.4;
+}
+
+.light .timeline-content{
+  color: #666;
+  border-left: 4px solid #333;
+  background-color:#white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark .timeline-content{
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  color:#9a9a99;
+  background-color:#black;
+  border-left: 4px solid #9a9;
+}
+
+/* 활동 개요 섹션 카드 스타일 */
+.activity-terms {
+  //margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.term-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.term-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.term-card h3 {
+  margin-bottom: 10px;
+}
+.terms h2 {
+  text-align: center;
+}
+.terms{
+  transform:translateY(70%);
+}
+.term-card p {
+  line-height: 1.4;
+}
+.activity-overview-section{
+  height:50vh;
+  
+}
